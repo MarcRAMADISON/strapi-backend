@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "table_deuxes",
+  "info": {
+    "singularName": "table-deux",
+    "pluralName": "table-deuxes",
+    "displayName": "tableDeux"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "table_un": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::table-un.table-un",
+      "inversedBy": "table_deuxes"
+    }
+  }
+}

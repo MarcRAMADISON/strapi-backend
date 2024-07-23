@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "table_uns",
+  "info": {
+    "singularName": "table-un",
+    "pluralName": "table-uns",
+    "displayName": "tableUn",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "table_deuxes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::table-deux.table-deux",
+      "mappedBy": "table_un"
+    }
+  }
+}
